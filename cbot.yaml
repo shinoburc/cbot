@@ -1,0 +1,44 @@
+# $Id: cbot.yaml 122 2009-08-13 17:25:43Z dot $
+
+regexlist:
+  (.*)って何: wikipedia
+  (.*)食べたい: cookpad
+  (占い): fortune
+  (fortune): fortune
+  # 天気教えて: weather
+  # '(^[ ]*天気[ ]*)$': exit
+  (天気): weather
+  (weather): weather
+  (こんにちは): interactive
+  (hello): interactive
+  (おやすみ): interactive
+  '^[ ]*(つかれた)[ ]*$': interactive
+  (Southern_Plex): movie
+  (CINEMAS_Q): movie
+  (MIHAMA_7Plex): movie
+  (CINEMA_PALETTO): movie
+  (SAKURAZAKA): movie
+  (date): date
+  (help): help
+  '(^\?[ ]*)$': help
+  '(^ls[ ]*)$': help
+  (itkeywords): it-keyword
+  '(^[ ]*exit[ ]*)$': exit
+  '(^[ ]*quit[ ]*)$': exit
+  '(^[ ]*bye[ ]*)$': exit
+  '(^[ ]*ばいばい[ ]*)$': exit
+
+interactive:
+    こんにちわわ:
+    ご機嫌よろしゅう:
+    What's up?:
+
+interactive_おやすみ:
+    Good Night!!!:
+    おねんねでちゅね:
+    歯みがけよ:
+
+interactive_つかれた:
+    休むのも仕事のうちだ〜:
+    よくがんばりました〜:
+    君は完璧だ:
